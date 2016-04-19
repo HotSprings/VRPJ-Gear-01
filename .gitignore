@@ -215,15 +215,17 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-# ---------------[ Unity generated ]------------------ #
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Obj/
 UnityGenerated/
-ProjectSettings/*.asset
+Library/
 
-# ----[ Visual Studio / MonoDevelop generated ]------- #
-
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
 ExportedObj/
 *.svd
 *.userprefs
@@ -235,7 +237,9 @@ ExportedObj/
 *.unityproj
 *.booproj
 
-# -------------[ OS generated ]------------------------ #
+# ============ #
+# OS generated #
+# ============ #
 .DS_Store
 .DS_Store?
 ._*
@@ -245,6 +249,10 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# -------------[ Build ]------------------------ #
-*.html
-*.unity3d
+# ============ #
+# for others   #
+# ============ #
+
+*.log #log files, for some plugins
+*.pyc #python bytecode cache, for some plugins.
+sysinfo.txt #Unity3D Generated File On Crash Reports
